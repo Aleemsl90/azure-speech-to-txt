@@ -5,7 +5,7 @@ from PIL import Image
 
 def speech_recognize_from_file(sound):
     """performs speech-to-text transcription with Azure SDK"""
-    speech_config = speechsdk.SpeechConfig(subscription="Azure subscription 04-2026", region="Germany West Central")
+    speech_config = speechsdk.SpeechConfig(subscription="----enter subscription----", region="Germany West Central")
     audio_config = speechsdk.audio.AudioConfig(filename=sound)
 
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, language="en-US", audio_config=audio_config)
